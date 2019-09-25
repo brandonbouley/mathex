@@ -1,25 +1,31 @@
 
 public class MathEx {
 
-    public static int swap(int x) {
+    private static int swap(int x) {
 
         int a=(x%10);
         int b=(x%100)/10;
         int c=(x%1000)/100; //isolate the digits in terms of ones
 
         a*=10;
-        c*=100; //convert the digit from the ones to tens and from ones to hundreds
-        int d= a+b+c; //put frankenstein's number back together
+        c*=100; //convert the digit from the ones to tens, and from ones to hundreds
 
-        return d;
+        return a+b+c; //put frankenstein's number back together
     }
+    private static int timeLeft(int curHour, int curMin, int depHour, int depMin) {
 
-    public static int timeLeft(double r, int curMin, int depHour, int depMin) {
-        double curHour = ;
-        int b = depHour + 12;
-        int remHour = b - a;
-        System.out.println(remHour);
+        curHour *= 60; // convert hours into minutes
+        depHour *= 60;
 
+        int curHourMin = curHour + curMin;  //combine hours and minutes into one big amount of minutes
+        int depHourMin = depHour + depMin;
+
+        int remTime = depHourMin - curHourMin; //total minutes remaining
+
+        int remHour = remTime / 60; // hours left can be found with int. division. minutes left can be found with the remainder.
+        int remMin = remTime % 60;
+
+        System.out.println("You have "+remHour+" hours and "+remMin+" minutes remaining.");
 
         return 0;
 
@@ -34,27 +40,10 @@ public class MathEx {
         System.out.println(b);
         System.out.println(c);
 
-        int d=timeLeft(1,0,11,0);
-
-
-
-
-
-
-
-
-
+        int d=timeLeft(2,0,3,0);
+        int e=timeLeft(4,30,11,15);
+        int f=timeLeft(5,11,7,3);
 
     }
-
-
-
-
-
-
-
-
-
-
 
     }

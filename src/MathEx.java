@@ -13,12 +13,12 @@ public class MathEx {
 
         return d;
     }
-    public static int timeLeft(int curHour, int curMin, int depHour, int depMin) {
-        int a= curHour+12;
-        int b= depHour+12;
-        int remHour=b-a;
-        System.out.println(remHour);
 
+    public static int timeLeft(double r, int curMin, int depHour, int depMin) {
+        double curHour = ;
+        int b = depHour + 12;
+        int remHour = b - a;
+        System.out.println(remHour);
 
 
         return 0;

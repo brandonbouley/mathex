@@ -31,7 +31,8 @@ public class MathEx {
     }
     public static int dayOfWeek(int FoM, int date) {
 
-        int DoW= (date%7)-(1-FoM);
+        int DoW=(date%7)+(6/(6-FoM));
+
 
         System.out.println(DoW);
 
@@ -66,9 +67,9 @@ public class MathEx {
 
         System.out.println(" ");
 
-        int g=dayOfWeek(0,14);
-        int h=dayOfWeek(0,18);
-        int j=dayOfWeek(0,31);
+        int g=dayOfWeek(0,5);
+        int h=dayOfWeek(0,6);
+        int j=dayOfWeek(0,7);
 
 
     }

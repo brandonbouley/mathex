@@ -25,11 +25,31 @@ public class MathEx {
         int remHour = remTime / 60; // hours left can be found with int. division. minutes left can be found with the remainder.
         int remMin = remTime % 60;
 
-        System.out.println("You have "+remHour+" hours and "+remMin+" minutes remaining.");
+        System.out.println("You have " + remHour + " hours and " + remMin + " minutes remaining.");
+
+        return 0;
+    }
+    public static int dayOfWeek(int FoM, int date) {
+
+        int DoW= (date%7)-(1-FoM);
+
+        System.out.println(DoW);
+
+
+
+
+
+
+
+
+
 
         return 0;
 
-    }
+
+        }
+
+
 
     public static void main(String[] args) {
         int a=swap(123);
@@ -43,6 +63,13 @@ public class MathEx {
         int d=timeLeft(2,0,3,0);
         int e=timeLeft(4,30,11,15);
         int f=timeLeft(5,11,7,3);
+
+        System.out.println(" ");
+
+        int g=dayOfWeek(0,14);
+        int h=dayOfWeek(0,18);
+        int j=dayOfWeek(0,31);
+
 
     }
 

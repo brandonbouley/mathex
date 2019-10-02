@@ -29,9 +29,12 @@ public class MathEx {
 
         return 0;
     }
-    public static int dayOfWeek(int FoM, int date) {
+    private static int dayOfWeek(int FoM, int date) {
 
-        int DoW=(date%7)+(6/(6-FoM));
+        int DoW=(date%7)-(1-FoM); //it's 1 am a day (i guess 2) after im supposed to hand this in so i'm taking the L on this one
+
+
+                    // :(
 
 
         System.out.println(DoW);
@@ -61,15 +64,15 @@ public class MathEx {
         System.out.println(b);
         System.out.println(c);
 
-        int d=timeLeft(2,0,3,0);
-        int e=timeLeft(4,30,11,15);
-        int f=timeLeft(5,11,7,3);
+        timeLeft(2,0,3,0);
+        timeLeft(4,30,11,15);
+        timeLeft(5, 11, 7, 3);
 
         System.out.println(" ");
 
-        int g=dayOfWeek(0,5);
-        int h=dayOfWeek(0,6);
-        int j=dayOfWeek(0,7);
+        int g=dayOfWeek(1,5);
+        int h=dayOfWeek(4,6);
+        int j=dayOfWeek(3,7);
 
 
     }

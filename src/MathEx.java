@@ -1,4 +1,4 @@
-
+//brandon bouley 3B :-)
 public class MathEx {
 
     private static int swap(int x) {
@@ -32,28 +32,12 @@ public class MathEx {
     private static int dayOfWeek(int FoM, int date) {
 
         int DoW=(date%7)-(1-FoM); //it's 1 am a day (i guess 2) after im supposed to hand this in so i'm taking the L on this one
-
-
                     // :(
-
-
         System.out.println(DoW);
-
-
-
-
-
-
-
-
-
 
         return 0;
 
-
         }
-
-
 
     public static void main(String[] args) {
         int a=swap(123);
@@ -73,8 +57,16 @@ public class MathEx {
         int g=dayOfWeek(1,5);
         int h=dayOfWeek(4,6);
         int j=dayOfWeek(3,7);
+    }}
+/* 132
+465
+798
+You have 1 hours and 0 minutes remaining.
+You have 6 hours and 45 minutes remaining.
+You have 1 hours and 52 minutes remaining.
 
+5
+9
+2
 
-    }
-
-    }
+Process finished with exit code 0   */
